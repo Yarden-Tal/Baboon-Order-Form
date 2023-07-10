@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./public/icon.svg" type="image/x-icon">
+    <script defer src="./script.js"></script>
+    <title>הזמינו באבון</title>
+</head>
+
+<body>
+    <header>
+        <h1>רוצה להזמין באבון? אין בעיה!</h1>
+        <div style="width: 120px; margin: 0 auto;"><img src="./public/icon.svg" alt=""></div>
+        <h2>ויקטור ייסע להביא.</h2>
+    </header>
+    <main>
+        <form class="form">
+            <div class="input-cter">
+                <label class="label" for="full-name">שם<span class="red">*</span></label>
+                <input minlength="2" maxlength="25" autofocus required class="input" type="text" name="full-name">
+            </div>
+            <div class="input-cter">
+                <label for="counter">כמות</label>
+                <input value="1" type="number" step="0.5" min="0" max="3" required name="counter">
+            </div>
+            <div class="input-cter">
+                <label for="type">סוג</label>
+                <select name="type">
+                    <option value="בגט">בגט</option>
+                    <option value="קערה">קערה</option>
+                </select>
+            </div>
+            <div class="input-cter">
+                <label class="red" for="isSpicy">חריף</label>
+                <input type="checkbox" name="isSpicy">
+            </div>
+        </form>
+        <button class="submit-btn">אישור</button>
+    </main>
+    <footer>
+        <div>
+            <h3>גילי 2023®</h3>
+        </div>
+    </footer>
+
+</body>
+
+</html>
