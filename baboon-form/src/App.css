@@ -352,7 +352,7 @@ input[role="switch"]::before {
     flex-direction: column;
     padding: 0 40px;
     align-items: center;
-    gap: 1.25rem;
+    gap: 1.4rem;
   }
 
   footer {
