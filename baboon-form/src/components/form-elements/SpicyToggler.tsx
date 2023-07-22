@@ -19,6 +19,7 @@ const SpicyToggler = (props: { isSpicy: boolean, setIsSpicy: (arg0: boolean) => 
                 role="switch"
                 name="isSpicy"
                 checked={props.isSpicy}
+                onChange={toggleIsSpicy()}
             ></input>
         </div>
     )

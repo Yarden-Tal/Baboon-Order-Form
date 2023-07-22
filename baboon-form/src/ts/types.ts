@@ -19,3 +19,15 @@ export type RadioButtonProps = {
      handleBaguetteType: MouseEventHandler<HTMLDivElement> | undefined
      handleBowlType: MouseEventHandler<HTMLDivElement> | undefined
 }
+
+export type Messages = {
+     thankYou: string;
+     email: string;
+     success: string;
+     error: string;
+ }
+
+ export type TemplateParams = {
+     message: string;
+     name: string;
+ }
