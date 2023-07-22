@@ -21,13 +21,16 @@ export type RadioButtonProps = {
 }
 
 export type Messages = {
-     thankYou: string;
+     trio: string;
+     summary: string;
      email: string;
+     trioEmail: string;
      success: string;
+     trioSuccess: string;
      error: string;
- }
+}
 
- export type TemplateParams = {
+export type TemplateParams = {
      message: string;
      name: string;
- }
+}
