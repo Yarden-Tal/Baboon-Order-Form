@@ -337,6 +337,18 @@ input[role="switch"]::before {
   left: 35px;
 }
 
+.trophy-cter {
+  display: inline;
+  position: relative;
+}
+
+.trophy {
+  font-size: 2rem;
+  position: absolute;
+  right: 5px;
+  bottom: -2px;
+}
+
 /* Tablet & mobile only styles */
 @media only screen and (max-width: 840px) {
   h1 {
@@ -375,17 +387,6 @@ input[role="switch"]::before {
 
   .baboon-logo {
     width: 40px;
-  }
-
-  .trophy-cter {
-    position: relative;
-  }
-
-  .trophy {
-    font-size: 2rem;
-    position: absolute;
-    right: 45px;
-    bottom: -2px;
   }
 }
 
