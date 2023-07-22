@@ -1,0 +1,375 @@
+html {
+  box-sizing: border-box;
+}
+
+@keyframes myAnim {
+  0% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    transform-origin: center center;
+  }
+
+  10% {
+    animation-timing-function: ease-in;
+    transform: scale(0.91);
+  }
+
+  17% {
+    animation-timing-function: ease-out;
+    transform: scale(0.98);
+  }
+
+  33% {
+    animation-timing-function: ease-in;
+    transform: scale(0.87);
+  }
+
+  45% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+}
+
+body {
+  z-index: 1;
+  text-align: center;
+  width: 85%;
+  margin: 32px auto;
+  background-color: seashell;
+  border: 2px solid orangered;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+  padding: 0 5px;
+}
+
+h2 {
+  margin-bottom: 45px;
+}
+
+.baboon-logo {
+  width: 120px;
+  margin: 0 auto;
+}
+
+.form {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 6%;
+}
+
+.label {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+select {
+  width: 120px;
+}
+
+.radios {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+input,
+select {
+  padding: 8px;
+  border: 1px solid gray;
+  border-radius: 100px;
+  border-color: #ff450040;
+  outline: none;
+}
+
+input,
+select,
+option {
+  font-size: 1rem;
+}
+
+input:focus {
+  font-size: 1rem;
+  border-color: orangered;
+}
+
+select,
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.input {
+  height: 60px;
+}
+
+.input-cter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Number input */
+
+input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+  text-align: center;
+  width: 40px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.number-input {
+  border: 2px solid #ddd;
+  display: inline-flex;
+}
+
+.number-input,
+.number-input * {
+  box-sizing: border-box;
+}
+
+.number-input button {
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  margin: 0;
+  position: relative;
+}
+
+#counter {
+  pointer-events: none;
+  font-weight: 700;
+}
+
+.number-input button:before,
+.number-input button:after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  width: 1rem;
+  height: 2px;
+  background-color: #212121;
+  transform: translate(-50%, -50%);
+}
+.number-input button.plus:after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.stepper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.step-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: 1px solid orange;
+  cursor: pointer;
+}
+
+.step-btn > button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.3rem;
+  color: #212121;
+  cursor: pointer;
+}
+
+.step-btn:hover {
+  background-color: orange;
+  color: white;
+}
+
+.radio,
+.radio > * {
+  cursor: pointer;
+}
+
+.radio:hover,
+.radio:hover > * {
+  filter: brightness(0.9);
+}
+
+.radio-checked {
+  border-radius: 50%;
+  outline: solid rgba(255, 68, 0, 0.573);
+}
+
+.less-opacity {
+  opacity: 0.4;
+}
+
+.svg-wrapper > img {
+  width: 30px;
+  padding: 6px;
+}
+
+.spicy {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.red {
+  color: red;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+}
+
+.submit-btn {
+  cursor: pointer;
+  border-radius: 5px;
+  border-style: none;
+  background-color: rgba(10, 139, 10, 0.865);
+  color: white;
+  align-self: center;
+  padding: 0.5em 2.5em;
+  margin: 60px 0 30px 0;
+  font-size: 1.5rem;
+}
+
+.submit-btn:hover {
+  background-color: rgb(7 113 7);
+  animation: myAnim 1s ease 0s 5 normal forwards;
+}
+
+footer {
+  padding-bottom: 10px;
+  position: absolute;
+  bottom: 0;
+}
+
+/* Checkbox */
+
+label:has([role="switch"]) {
+  zoom: var(--switch-zoom, 1);
+  display: inline-flex;
+  align-items: center;
+  gap: 1em;
+  cursor: pointer;
+  user-select: none;
+}
+
+input[role="switch"] {
+  --switch-handle-size: 8px;
+  --switch-bg-size: 47px;
+  --switch-handle-gap: 6px;
+  --switch-fg: orangered;
+  --switch-bg: color-mix(in srgb, var(--switch-fg) 20%, transparent);
+  appearance: none;
+  -webkit-appearance: none;
+  box-sizing: content-box;
+  display: inline-flex;
+  padding-inline: 0 var(--switch-bg-size);
+  border: 1px solid orangered;
+  font-size: 0;
+  margin: 0;
+  height: 15px;
+  width: auto;
+  border-radius: 50px;
+  background: var(--switch-bg);
+  transition: var(--switch-duration, 0.2s) cubic-bezier(0.65, 0, 0.5, 1);
+  user-select: none;
+  outline: none;
+  filter: opacity(0.25);
+  cursor: pointer;
+}
+
+input[role="switch"]:checked {
+  padding-inline: var(--switch-bg-size) 0;
+  filter: none;
+}
+
+input[role="switch"]::before {
+  content: "";
+  padding: var(--switch-handle-size);
+  margin: auto var(--switch-handle-gap);
+  background: var(--switch-fg);
+  border-radius: 50%;
+  transition: inherit;
+}
+
+.point {
+  cursor: pointer;
+}
+
+.chili-svg {
+  rotate: 26deg;
+}
+
+.chili-svg2 {
+  rotate: -8deg;
+  position: relative;
+  left: 35px;
+}
+
+/* Mobile only styles */
+@media only screen and (max-width: 840px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 18px;
+  }
+
+  .form {
+    flex-direction: column;
+    padding: 0 40px;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  footer {
+    padding-bottom: 10px;
+    position: initial;
+  }
+
+  .submit-btn {
+    margin: 30px 0;
+    width: 77%;
+  }
+
+  .radios {
+    justify-content: center;
+  }
+
+  .input {
+    width: 90%;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .baboon-logo {
+    width: 40px;
+  }
+}
