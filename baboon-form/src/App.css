@@ -44,6 +44,10 @@ h1 {
   padding: 0 5px;
 }
 
+.title-break {
+  display: none;
+}
+
 h2 {
   margin-bottom: 45px;
 }
@@ -230,6 +234,8 @@ input[type="number"]::-webkit-outer-spin-button {
   gap: 1rem;
   align-items: center;
   justify-content: center;
+  position: relative;
+  right: 19px;
 }
 
 .red {
@@ -331,7 +337,7 @@ input[role="switch"]::before {
   left: 35px;
 }
 
-/* Mobile only styles */
+/* Tablet & mobile only styles */
 @media only screen and (max-width: 840px) {
   h1 {
     font-size: 1.5rem;
@@ -356,11 +362,25 @@ input[role="switch"]::before {
 
   .submit-btn {
     margin: 30px 0;
-    width: 77%;
   }
 
   .radios {
     justify-content: center;
+  }
+
+  .input {
+    align-self: center;
+    justify-self: center;
+  }
+
+  .baboon-logo {
+    width: 40px;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .title-break {
+    display: block;
   }
 
   .input {
@@ -369,7 +389,8 @@ input[role="switch"]::before {
     justify-self: center;
   }
 
-  .baboon-logo {
-    width: 40px;
+  .submit-btn {
+    margin: 30px 0;
+    width: 77%;
   }
 }
