@@ -338,15 +338,30 @@ input[role="switch"]::before {
 }
 
 .trophy-cter {
-  display: inline;
   position: relative;
 }
 
 .trophy {
-  font-size: 2rem;
+  font-size: 7rem;
   position: absolute;
-  right: 5px;
-  bottom: -2px;
+  right: 45px;
+  bottom: 100px;
+}
+
+.tr2 {
+  right: -380px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /* Tablet & mobile only styles */
@@ -388,6 +403,17 @@ input[role="switch"]::before {
   .baboon-logo {
     width: 40px;
   }
+
+  .trophy {
+    font-size: 4rem;
+    position: absolute;
+    right: 78px;
+    bottom: -80px;
+  }
+
+  .tr2 {
+    right: -145px;
+  }
 }
 
 @media only screen and (max-width: 530px) {
@@ -404,5 +430,17 @@ input[role="switch"]::before {
   .submit-btn {
     margin: 30px 0;
     width: 77%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .trophy {
+    font-size: 2rem;
+    position: absolute;
+    right: 78px;
+    bottom: -59px;
+  }
+  .tr2 {
+    right: -110px;
   }
 }
