@@ -31,7 +31,6 @@ html {
 }
 
 body {
-  z-index: 1;
   text-align: center;
   width: 85%;
   margin: 32px auto;
@@ -58,7 +57,6 @@ h2 {
 }
 
 .form {
-  z-index: 2;
   display: flex;
   justify-content: center;
   align-items: baseline;
@@ -114,6 +112,10 @@ input[type="checkbox"] {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.self-start {
+  align-self: start;
 }
 
 /* Number input */

@@ -16,7 +16,7 @@ const QuantityStepper = (props: StepperProps) => {
     };
     const handleTrophyDisplay = (): string => props.quantity < 3 ? "none" : "inline";
     return (
-        <div className="input-cter input">
+        <div className="input-cter input self-start">
             <div className="trophy-cter"><span className="trophy" style={{ display: handleTrophyDisplay() }}>🏆</span></div>
             <div className="trophy-cter"><span className="trophy tr2" style={{ display: handleTrophyDisplay() }}>🏆</span></div>
             <label htmlFor="counter"><b>כמות</b></label>
