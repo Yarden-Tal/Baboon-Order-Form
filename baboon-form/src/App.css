@@ -349,7 +349,7 @@ input[role="switch"]::before {
 }
 
 .tr2 {
-  right: -380px;
+  right: -410px;
 }
 
 @keyframes pulse {

@@ -11,7 +11,7 @@ const QuantityStepper = (props: StepperProps) => {
         else if (props.quantity === 1.5) color = "orange";
         else if (props.quantity === 2) color = "orangered";
         else if (props.quantity === 2.5) color = "red";
-        else color = "gold";
+        else color = "goldenrod";
         return color;
     };
     const handleTrophyDisplay = (): string => props.quantity < 3 ? "none" : "inline";
